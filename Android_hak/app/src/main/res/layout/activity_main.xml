@@ -6,14 +6,16 @@
     android:layout_height="match_parent"
     tools:context="com.example.hak.android_hak.MainActivity"
     android:orientation="vertical"
-    android:weightSum="10">
+    android:weightSum="10"
+    android:baselineAligned="true"
+    android:measureWithLargestChild="false" >
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="0.5"
         android:layout_margin="30dp"
+        android:layout_weight="1"
         android:padding="30dp"
         android:text="Study_HAK"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,7 +26,7 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:text="Text1!!!!"
         android:layout_weight="0.5" />
 
@@ -33,6 +35,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TextView222222"
-        android:layout_weight="1" />
+        android:layout_weight="3" />
 
 </LinearLayout>
